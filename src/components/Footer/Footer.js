@@ -4,7 +4,7 @@ let date = new Date();
 class Footer extends Component {
   render() {
     return (
-      <footer className="Header-main">
+      <footer>
         <p className={styles.tiny}>
           Kenneth R Carter{' '}
           <span role="img" aria-label="copyright">
