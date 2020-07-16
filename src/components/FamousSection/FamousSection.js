@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './FamousSection.css';
 
 import FamousPersonForm from '../FamousPersonForm/FamousPersonForm';
+import FamousPersonList from '../FamousPersonList/FamousPersonList';
 
 class FamousSection extends Component {
   state = {
@@ -74,10 +75,11 @@ class FamousSection extends Component {
         <p>
           {this.state.famousPerson.name} is famous for "{this.state.famousPerson.role}".
         </p>
-        <ul>
-          {/* The list should go here. */}
+        {/* <ul>
           {peopleLi}
-        </ul>
+        </ul> */}
+
+        <FamousPersonList people={peopleLi} />
       </section>
     );
   }
