@@ -1,0 +1,12 @@
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+li {
+  box-shadow: 1px 3px 6px rgb(94, 92, 92);
+  margin: 15px;
+  padding: 5px;
+  border: 0 solid;
+  border-radius: 10px;
+}
