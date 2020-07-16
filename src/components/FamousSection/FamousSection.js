@@ -3,6 +3,7 @@ import './FamousSection.css';
 
 import FamousPersonForm from '../FamousPersonForm/FamousPersonForm';
 import FamousPersonList from '../FamousPersonList/FamousPersonList';
+import FamousPerson from '../FamousPerson/FamousPerson';
 
 class FamousSection extends Component {
   state = {
@@ -72,13 +73,13 @@ class FamousSection extends Component {
           handleSubmit={this.addPerson}
         />
 
-        <p>
+        {/* <p>
           {this.state.famousPerson.name} is famous for "{this.state.famousPerson.role}".
-        </p>
+        </p> */}
         {/* <ul>
           {peopleLi}
         </ul> */}
-
+        <FamousPerson person={this.state.famousPerson} />
         <FamousPersonList people={peopleLi} />
       </section>
     );
