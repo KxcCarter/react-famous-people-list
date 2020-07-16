@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../FamousPersonList/FamousPersonList.module.css';
+import styles from './FamousPersonList.module.css';
 
 class FamousPersonList extends Component {
   render() {

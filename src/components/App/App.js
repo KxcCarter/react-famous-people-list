@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import FamousSection from '../FamousSection/FamousSection';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
           The list shouldn't go here.
           The list goes inside of the FamousSection Component
         */}
+        <Footer />
       </div>
     );
   }

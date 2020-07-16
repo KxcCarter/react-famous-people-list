@@ -9,4 +9,6 @@ li {
   padding: 5px;
   border: 0 solid;
   border-radius: 10px;
+
+  list-style-type: none;
 }
