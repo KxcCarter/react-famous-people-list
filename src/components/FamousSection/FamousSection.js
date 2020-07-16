@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './FamousSection.css';
 
+import FamousPersonForm from '../FamousPersonForm/FamousPersonForm';
+
 class FamousSection extends Component {
   state = {
     famousPerson: {
@@ -38,12 +40,16 @@ class FamousSection extends Component {
 
   render() {
     const peopleLi = this.state.people.map((item, index) => {
-      return <li key={index}>{item.name}</li>;
+      return (
+        <li key={index}>
+          {item.name} is famous for {item.role}
+        </li>
+      );
     });
 
     return (
       <section className="new-person-section">
-        <form onSubmit={this.addPerson}>
+        {/* <form onSubmit={this.addPerson}>
           <label htmlFor="name-input">Name:</label>
           <input
             value={this.state.famousPerson.name}
@@ -57,7 +63,14 @@ class FamousSection extends Component {
             onChange={(event) => this.handleChangeFor(event, 'role')}
           />
           <button type="submit">Done</button>
-        </form>
+        </form> */}
+
+        <FamousPersonForm
+          value={this.state.famousPerson}
+          handleChange={this.handleChangeFor}
+          handleSubmit={this.addPerson}
+        />
+
         <p>
           {this.state.famousPerson.name} is famous for "{this.state.famousPerson.role}".
         </p>
